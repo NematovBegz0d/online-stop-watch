@@ -1,0 +1,81 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+body {
+  background: linear-gradient(45deg, #1870ed, #f18f88);
+  font-family: "SF Pro Display", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-container {
+  margin: 2rem 0;
+  background: rgba(255, 255, 225, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.timer-container > div {
+  margin: 0 1rem;
+}
+.timer-col {
+  text-align: center;
+  margin: 0 3rem;
+  position: relative;
+  min-width: 5rem;
+}
+.timer-col h3 {
+  font-weight: 600;
+}
+.timer-col p {
+  font-weight: 600;
+  color: #080808;
+}
+.timer-label {
+  color: rgba(255, 255, 225, 0.5);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-top: 0.75rem;
+}
+.timer-btn button {
+  font-weight: 500;
+  color: #fff;
+}
+.timer-btn button:hover {
+  color: #fff;
+}
+.btn {
+  margin: 10px;
+  width: 80%;
+}
+
+.timer-container-intervals {
+  margin: 2rem 0;
+  background: #080808;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  color: crimson;
+  height: 10rem;
+  overflow-y: auto;
+}
+.timer-container-intervals::-webkit-scrollbar {
+  width: 4px;
+}
+.timer-container-intervals::-webkit-scrollbar-thumb {
+  background-color: yellow;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 825px) {
+  .timer-container {
+    flex-direction: column;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .timer-col + .timer-col {
+    margin-top: 1rem;
+  }
+}
